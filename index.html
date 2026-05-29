@@ -5,58 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oregon Coast Tides</title>
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon Coast Tides</title>
+
+```
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+```
+
 </head>
 
 <body>
 
 <div class="container">
 
+```
 <header class="header">
     <h1>🌊 Oregon Coast Tides</h1>
     <p>Weather • Surf • Fishing • Crabbing</p>
 </header>
 
-<div class="card controls-card">
-    <select>
-        <option>Astoria</option>
-        <option>Seaside</option>
-        <option>Cannon Beach</option>
-        <option>Newport</option>
-        <option>Florence</option>
-        <option>Coos Bay</option><select id="locationSelect">
+<div class="card location-bar">
 
-    <optgroup label="North Coast">
-        <option>Astoria</option>
-        <option>Warrenton</option>
-        <option>Hammond</option>
-        <option>Seaside</option>
-        <option>Cannon Beach</option>
-        <option>Manzanita</option>
-        <option>Rockaway Beach</option>
-        <option>Garibaldi</option>
-        <option>Tillamook</option>
-        <option>Nehalem Bay</option>
-        <option>Barview</option>
-        <option>Pacific City</option>
-    </optgroup>
+    <select id="locationSelect">
 
-    <optgroup label="Central Coast">
-        <option>Lincoln City</option>
-        <option>Depoe Bay</option>
-        <option>Newport</option>
-        <option>Waldport</option>
-        <option>Yachats</option>
-        <option>Florence</option>
-        <option>Reedsport</option>
-        <option>Winchester Bay</option>
-    </optgroup>
+        <optgroup label="North Coast">
+            <option>Astoria</option>
+            <option>Warrenton</option>
+            <option>Hammond</option>
+            <option>Seaside</option>
+            <option>Cannon Beach</option>
+            <option>Manzanita</option>
+            <option>Rockaway Beach</option>
+            <option>Garibaldi</option>
+            <option>Tillamook</option>
+            <option>Nehalem Bay</option>
+            <option>Barview</option>
+            <option>Pacific City</option>
+        </optgroup>
 
-</select>
+        <optgroup label="Central Coast">
+            <option>Lincoln City</option>
+            <option>Depoe Bay</option>
+            <option>Newport</option>
+            <option>Waldport</option>
+            <option>Yachats</option>
+            <option>Florence</option>
+            <option>Reedsport</option>
+            <option>Winchester Bay</option>
+        </optgroup>
+
     </select>
 
-    <button>Use My Location</button>
+    <button>📍 Use My Location</button>
+
+</div>
+
+<div class="featured-locations">
+
+    <button class="quick-btn">🎣 Astoria</button>
+    <button class="quick-btn">🦀 Garibaldi</button>
+    <button class="quick-btn">🌊 Newport</button>
+    <button class="quick-btn">🦀 Winchester Bay</button>
+
 </div>
 
 <div class="tide-card">
@@ -71,23 +87,24 @@
 <div class="grid">
 
     <div class="card">
-        <h3>🌤 Weather</h3>
-        <p>55°F</p>
+        <h3>🌥 Weather</h3>
+        <div class="metric-value">55°F</div>
     </div>
 
     <div class="card">
         <h3>💨 Wind</h3>
-        <p>14 mph NW</p>
+        <div class="metric-value">14 mph</div>
+        <p>NW</p>
     </div>
 
     <div class="card">
         <h3>🏄 Surf</h3>
-        <p>6.8 ft</p>
+        <div class="metric-value">6.8 ft</div>
     </div>
 
     <div class="card">
         <h3>🌡 Water Temp</h3>
-        <p>52°F</p>
+        <div class="metric-value">52°F</div>
     </div>
 
 </div>
@@ -97,15 +114,21 @@
 <div class="grid">
 
     <div class="card">
-        📷 Beach Cam
+        <div class="camera-placeholder">
+            📷 Beach Cam
+        </div>
     </div>
 
     <div class="card">
-        ⚓ Harbor Cam
+        <div class="camera-placeholder">
+            ⚓ Harbor Cam
+        </div>
     </div>
 
     <div class="card">
-        🚗 Traffic Cam
+        <div class="camera-placeholder">
+            🚗 Traffic Cam
+        </div>
     </div>
 
 </div>
@@ -116,14 +139,14 @@
 
     <div class="card high-card">
         <h3>⬆ Next High Tide</h3>
-        <p>7.0 ft</p>
+        <div class="metric-value">7.0 ft</div>
         <p>1:36 PM</p>
-        <small>In 27 minutes</small>
+        <p>In 27 minutes</p>
     </div>
 
     <div class="card low-card">
         <h3>⬇ Next Low Tide</h3>
-        <p>2.9 ft</p>
+        <div class="metric-value">2.9 ft</div>
         <p>6:52 PM</p>
     </div>
 
@@ -135,7 +158,7 @@
 
     <div class="card">
         <h3>🎣 Fishing Score</h3>
-        <p>★★★★☆</p>
+        <div class="metric-value">★★★★☆</div>
     </div>
 
     <div class="card">
@@ -154,10 +177,13 @@
     </div>
 
 </div>
+```
 
 </div>
 
 </body>
+</html>
+
 ```
 
 </html>
