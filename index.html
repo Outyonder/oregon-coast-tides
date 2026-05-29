@@ -1,12 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oregon Coast Tides</title>
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Oregon Coast Tides</h1>
-    <p>Matt's Oregon Coast Fishing Companion is under construction.</p>
+
+<div class="container">
+
+    <header class="header">
+        <h1>🌊 Oregon Coast Tides</h1>
+        <p>Weather • Surf • Fishing • Crabbing</p>
+    </header>
+
+    <section class="card">
+        <div class="location-row">
+            <select id="location">
+                <option>Astoria</option>
+                <option>Seaside</option>
+                <option>Cannon Beach</option>
+                <option>Rockaway Beach</option>
+                <option>Garibaldi</option>
+                <option>Pacific City</option>
+                <option>Lincoln City</option>
+                <option>Depoe Bay</option>
+                <option>Newport</option>
+                <option>Yachats</option>
+                <option>Florence</option>
+            </select>
+
+            <button class="primary-btn">
+                Use My Location
+            </button>
+        </div>
+    </section>
+
+    <section class="current-tide">
+        <div class="current-label">CURRENT TIDE</div>
+
+        <div class="tide-height">
+            6.8 ft
+        </div>
+
+        <div class="tide-status">
+            Rising
+        </div>
+
+        <div class="tide-description">
+            Height above Mean Lower Low Water
+        </div>
+    </section>
+
+    <h2>Next Tides</h2>
+
+    <section class="grid-2">
+
+        <div class="card">
+            <h3>⬆ Next High</h3>
+            <div class="big-number">7.0 ft</div>
+            <p>1:36 PM</p>
+            <p>In 27 minutes</p>
+        </div>
+
+        <div class="card">
+            <h3>⬇ Next Low</h3>
+            <div class="big-number">2.9 ft</div>
+            <p>6:52 PM</p>
+            <p>In 5h 43m</p>
+        </div>
+
+    </section>
+
+    <h2>Weather</h2>
+
+    <section class="grid-2">
+
+        <div class="card">
+            <h3>🌡 Temperature</h3>
+            <div class="big-number">55°F</div>
+        </div>
+
+        <div class="card">
+            <h3>💨 Wind</h3>
+            <div class="big-number">14 mph</div>
+            <p>NW</p>
+        </div>
+
+        <div class="card">
+            <h3>🌅 Sunrise</h3>
+            <div class="big-number">5:30 AM</div>
+        </div>
+
+        <div class="card">
+            <h3>🌇 Sunset</h3>
+            <div class="big-number">8:56 PM</div>
+        </div>
+
+    </section>
+
+    <h2>Surf Conditions</h2>
+
+    <section class="grid-2">
+
+        <div class="card">
+            <h3>🌊 Swell Height</h3>
+            <div class="big-number">6.8 ft</div>
+        </div>
+
+        <div class="card">
+            <h3>⏱ Swell Period</h3>
+            <div class="big-number">9 sec</div>
+        </div>
+
+        <div class="card">
+            <h3>🧭 Direction</h3>
+            <div class="big-number">WNW</div>
+        </div>
+
+        <div class="card">
+            <h3>🌡 Water Temp</h3>
+            <div class="big-number">52°F</div>
+        </div>
+
+    </section>
+
+    <h2>Fishing Conditions</h2>
+
+    <section class="card">
+        <h3>🎣 Fishing Rating</h3>
+        <div class="rating good">GOOD</div>
+
+        <p>Major Feeding Time</p>
+        <strong>6:12 AM - 8:14 AM</strong>
+
+        <p>Minor Feeding Time</p>
+        <strong>2:03 PM - 3:11 PM</strong>
+    </section>
+
+    <h2>Crabbing Conditions</h2>
+
+    <section class="card">
+        <div class="rating excellent">EXCELLENT</div>
+        <p>Incoming tide with moderate current.</p>
+    </section>
+
+    <h2>Moon Phase</h2>
+
+    <section class="card">
+        <div class="big-number">🌔</div>
+        <p>Waxing Gibbous</p>
+    </section>
+
+</div>
+
 </body>
 </html>
