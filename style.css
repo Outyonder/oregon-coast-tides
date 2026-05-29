@@ -1,6 +1,7 @@
+```css
 body {
-    font-family: Arial, sans-serif;
-    background: #e9eef3;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(to bottom, #dfeaf2, #edf4f8);
     margin: 0;
     padding: 20px;
     color: #222;
@@ -11,43 +12,89 @@ body {
     margin: auto;
 }
 
+/* HEADER */
+
 .header {
     text-align: center;
+    background: linear-gradient(135deg, #012a4a, #014f86);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
     margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
 .header h1 {
-    color: #003566;
+    color: white;
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .header p {
+    color: #d8ecff;
     font-size: 1.2rem;
-    color: #555;
+    margin-top: 10px;
 }
+
+/* SECTION HEADERS */
+
+.section-title {
+    color: #014f86;
+    border-left: 6px solid #0077b6;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* CARDS */
 
 .card {
     background: white;
     border-radius: 18px;
-    padding: 20px;
+    padding: 22px;
     box-shadow: 0 4px 15px rgba(0,0,0,.08);
-    margin-bottom: 20px;
+    transition: transform .2s ease;
 }
 
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #014f86;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #003566;
+}
+
+/* CURRENT TIDE */
+
 .tide-card {
-    background: linear-gradient(135deg,#003566,#0077b6);
+    background: linear-gradient(135deg, #012a4a, #0077b6);
     color: white;
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 25px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,.20);
+    text-align: center;
+}
+
+.tide-card h2 {
+    margin-top: 0;
 }
 
 .tide-height {
     font-size: 4rem;
     font-weight: bold;
+    margin: 15px 0;
 }
+
+/* GRID LAYOUT */
 
 .grid {
     display: grid;
@@ -56,18 +103,25 @@ body {
     margin-bottom: 20px;
 }
 
+/* TIDE COLORS */
+
 .high-card {
-    background: #e6f0ff;
+    background: linear-gradient(to bottom, #e7f1ff, #f7fbff);
+    border-left: 6px solid #0077b6;
 }
 
 .low-card {
-    background: #dff9fb;
+    background: linear-gradient(to bottom, #e8fbff, #f8ffff);
+    border-left: 6px solid #00b4d8;
 }
 
-.section-title {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #003566;
+/* CONTROLS */
+
+.controls-card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 select,
@@ -83,31 +137,38 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background .2s;
 }
 
 button:hover {
     background: #005f8f;
 }
 
-.location-bar {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+/* CAMERA PLACEHOLDERS */
 
 .camera-placeholder {
     height: 180px;
-    background: #dfe8ef;
+    background: linear-gradient(to bottom, #cfdbe7, #e8eef4);
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #666;
+    color: #555;
     font-weight: bold;
 }
 
-.metric-value {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #003566;
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .tide-height {
+        font-size: 3rem;
+    }
+
 }
+```
+
