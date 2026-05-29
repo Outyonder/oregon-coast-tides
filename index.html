@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+```html
 <body>
 
 <div class="container">
@@ -17,13 +18,14 @@
     <p>Weather • Surf • Fishing • Crabbing</p>
 </header>
 
-<div class="card">
+<div class="card controls-card">
     <select>
         <option>Astoria</option>
         <option>Seaside</option>
         <option>Cannon Beach</option>
         <option>Newport</option>
         <option>Florence</option>
+        <option>Coos Bay</option>
     </select>
 
     <button>Use My Location</button>
@@ -33,89 +35,101 @@
     <h2>Current Tide</h2>
     <div class="tide-height">6.8 ft</div>
     <p>Rising</p>
+    <small>Height above Mean Lower Low Water</small>
 </div>
 
-<h2>Current Conditions</h2>
+<h2 class="section-title">Current Conditions</h2>
 
 <div class="grid">
+
     <div class="card">
-        <h3>Weather</h3>
+        <h3>🌤 Weather</h3>
         <p>55°F</p>
     </div>
 
     <div class="card">
-        <h3>Wind</h3>
+        <h3>💨 Wind</h3>
         <p>14 mph NW</p>
     </div>
 
     <div class="card">
-        <h3>Surf</h3>
+        <h3>🏄 Surf</h3>
         <p>6.8 ft</p>
     </div>
 
     <div class="card">
-        <h3>Water Temp</h3>
+        <h3>🌡 Water Temp</h3>
         <p>52°F</p>
     </div>
+
 </div>
 
-<h2>Live Cameras</h2>
+<h2 class="section-title">Live Cameras</h2>
 
 <div class="grid">
+
     <div class="card">
-        Beach Cam
+        📷 Beach Cam
     </div>
 
     <div class="card">
-        Harbor Cam
+        ⚓ Harbor Cam
     </div>
 
     <div class="card">
-        Traffic Cam
+        🚗 Traffic Cam
     </div>
+
 </div>
 
-<h2>Next Tides</h2>
+<h2 class="section-title">Next Tides</h2>
 
 <div class="grid">
+
     <div class="card high-card">
-        <h3>Next High Tide</h3>
+        <h3>⬆ Next High Tide</h3>
         <p>7.0 ft</p>
         <p>1:36 PM</p>
+        <small>In 27 minutes</small>
     </div>
 
     <div class="card low-card">
-        <h3>Next Low Tide</h3>
+        <h3>⬇ Next Low Tide</h3>
         <p>2.9 ft</p>
         <p>6:52 PM</p>
     </div>
+
 </div>
 
-<h2>Fishing Conditions</h2>
+<h2 class="section-title">Fishing Conditions</h2>
 
 <div class="grid">
+
     <div class="card">
-        🎣 Fishing Score<br>
-        ★★★★☆
+        <h3>🎣 Fishing Score</h3>
+        <p>★★★★☆</p>
     </div>
 
     <div class="card">
-        🌙 Moon Phase<br>
-        Waxing Crescent
+        <h3>🌙 Moon Phase</h3>
+        <p>Waxing Crescent</p>
     </div>
 
     <div class="card">
-        🌊 Tide Trend<br>
-        Incoming
+        <h3>🌊 Tide Trend</h3>
+        <p>Incoming</p>
     </div>
 
     <div class="card">
-        🕓 Best Time<br>
-        5AM - 8AM
+        <h3>🕓 Best Time</h3>
+        <p>5 AM - 8 AM</p>
     </div>
+
 </div>
 
 </div>
 
 </body>
+```
+
 </html>
