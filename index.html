@@ -1,308 +1,237 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon Coast Companion</title>
 
-<title>Oregon Coast Companion</title>
-
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="container">
 
-<!-- HEADER -->
+    <!-- HEADER -->
 
-<header class="top-header">
+    <header class="top-header">
 
-<div class="logo-area">
+        <div class="logo-box">
+            LOGO
+        </div>
 
-<div class="logo-placeholder">
-LOGO
-</div>
+        <div class="title-box">
 
-<div>
+            <h1>Oregon Coast Companion</h1>
 
-<h1>Oregon Coast Companion</h1>
+            <p class="tagline">
+                Tides • Weather • Surf • Fishing • Crabbing
+            </p>
 
-<p class="tagline">
-Tides • Weather • Surf • Fishing • Crabbing
-</p>
+        </div>
 
-</div>
+        <div class="theme-box">
 
-</div>
+            <label for="theme">Theme</label>
 
-<div class="theme-picker">
+            <select id="theme">
+                <option>Coastal Blue</option>
+                <option>Dark Mode</option>
+                <option>Sand</option>
+            </select>
 
-<label>Theme</label>
+        </div>
 
-<select>
-<option>🌊 Coastal Blue</option>
-<option>🌙 Dark Mode</option>
-<option>🏖️ Sand</option>
-</select>
+    </header>
 
-</div>
+    <!-- LOCATION BAR -->
 
-</header>
+    <section class="card">
 
-<!-- LOCATION BAR -->
+        <div class="location-bar">
 
-<div class="card">
+            <select>
 
-<div class="location-bar">
+                <option>Astoria</option>
+                <option>Garibaldi</option>
+                <option>Rockaway Beach</option>
+                <option>Pacific City</option>
+                <option>Newport</option>
+                <option>Florence</option>
+                <option>Winchester Bay</option>
 
-<select>
-<option>Astoria</option>
-<option>Garibaldi</option>
-<option>Rockaway</option>
-<option>Pacific City</option>
-<option>Newport</option>
-<option>Florence</option>
-<option>Winchester Bay</option>
-</select>
+            </select>
 
-<button>📍 Use My Location</button>
+            <button>Use My Location</button>
 
-<button>🔄 Refresh</button>
+            <button>Refresh</button>
 
-</div>
+        </div>
 
-</div>
+    </section>
 
-<!-- QUICK LOCATIONS -->
+    <!-- QUICK LOCATIONS -->
 
-<div class="quick-links">
+    <section class="quick-links">
 
-<button class="quick-btn">🎣 Astoria</button>
+        <button>Astoria</button>
+        <button>Garibaldi</button>
+        <button>Rockaway</button>
+        <button>Pacific City</button>
+        <button>Newport</button>
+        <button>Florence</button>
+        <button>Winchester Bay</button>
 
-<button class="quick-btn">🦀 Garibaldi</button>
+    </section>
 
-<button class="quick-btn">🌊 Rockaway</button>
+    <!-- CURRENT CONDITIONS -->
 
-<button class="quick-btn">🏖️ Pacific City</button>
+    <h2>Current Conditions</h2>
 
-<button class="quick-btn">🌊 Newport</button>
+    <section class="dashboard-grid">
 
-<button class="quick-btn">⚓ Florence</button>
+        <div class="card">
+            <h3>Tide</h3>
+            <p>6.8 ft</p>
+            <small>Rising</small>
+        </div>
 
-<button class="quick-btn">🦀 Winchester Bay</button>
+        <div class="card">
+            <h3>Weather</h3>
+            <p>55°F</p>
+            <small>Cloudy</small>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Wind</h3>
+            <p>14 mph</p>
+            <small>NW</small>
+        </div>
 
-<!-- CURRENT CONDITIONS SUMMARY -->
+        <div class="card">
+            <h3>Surf</h3>
+            <p>6.8 ft</p>
+            <small>Moderate</small>
+        </div>
 
-<div class="grid">
+        <div class="card">
+            <h3>Water Temp</h3>
+            <p>52°F</p>
+            <small>Ocean</small>
+        </div>
 
-<div class="card metric-card">
+    </section>
 
-<h3>🌊 Tide</h3>
+    <!-- CAMERAS -->
 
-<div class="metric-value">6.8 ft</div>
+    <h2>Live Cameras</h2>
 
-<p>Rising</p>
+    <section class="card">
 
-</div>
+        <div class="camera-controls">
 
-<div class="card metric-card">
+            <select>
+                <option>Garibaldi</option>
+                <option>Astoria</option>
+                <option>Newport</option>
+                <option>Winchester Bay</option>
+            </select>
 
-<h3>⛅ Weather</h3>
+            <select>
+                <option>Harbor Cam</option>
+                <option>Beach Cam</option>
+                <option>Traffic Cam</option>
+            </select>
 
-<div class="metric-value">55°</div>
+        </div>
 
-<p>Cloudy</p>
+        <div class="camera-preview">
 
-</div>
+            Camera Preview Area
 
-<div class="card metric-card">
+        </div>
 
-<h3>💨 Wind</h3>
+    </section>
 
-<div class="metric-value">14</div>
+    <!-- NEXT TIDES -->
 
-<p>MPH NW</p>
+    <h2>Next Tides</h2>
 
-</div>
+    <section class="dashboard-grid">
 
-<div class="card metric-card">
+        <div class="card">
+            <h3>Next High Tide</h3>
+            <p>7.0 ft</p>
+            <small>1:36 PM</small>
+        </div>
 
-<h3>🏄 Surf</h3>
+        <div class="card">
+            <h3>Next Low Tide</h3>
+            <p>2.9 ft</p>
+            <small>6:52 PM</small>
+        </div>
 
-<div class="metric-value">6.8 ft</div>
+    </section>
 
-<p>Moderate</p>
+    <!-- FISHING CONDITIONS -->
 
-</div>
+    <h2>Fishing Conditions</h2>
 
-<div class="card metric-card">
+    <section class="dashboard-grid">
 
-<h3>🌡 Water</h3>
+        <div class="card">
+            <h3>Fishing Score</h3>
+            <p>★★★★☆</p>
+        </div>
 
-<div class="metric-value">52°</div>
+        <div class="card">
+            <h3>Moon Phase</h3>
+            <p>Waxing Crescent</p>
+        </div>
 
-<p>Ocean Temp</p>
+        <div class="card">
+            <h3>Tide Trend</h3>
+            <p>Incoming</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Best Time</h3>
+            <p>5 AM - 8 AM</p>
+        </div>
 
-</div>
+    </section>
 
-<!-- LIVE CAMERAS -->
+    <!-- TRIP PLANNER -->
 
-<section>
+    <h2>Trip Planner</h2>
 
-<h2 class="section-title">📷 Live Cameras</h2>
+    <section class="dashboard-grid">
 
-<div class="card">
+        <div class="card">
+            <h3>Traffic</h3>
+            <p>Coming Soon</p>
+        </div>
 
-<div class="camera-controls">
+        <div class="card">
+            <h3>Parking</h3>
+            <p>Coming Soon</p>
+        </div>
 
-<select>
-<option>Garibaldi</option>
-<option>Astoria</option>
-<option>Rockaway</option>
-<option>Pacific City</option>
-<option>Newport</option>
-<option>Florence</option>
-<option>Winchester Bay</option>
-</select>
+        <div class="card">
+            <h3>Crabbing</h3>
+            <p>Coming Soon</p>
+        </div>
 
-<select>
-<option>Harbor Cam</option>
-<option>Beach Cam</option>
-<option>Traffic Cam</option>
-</select>
-
-</div>
-
-<div class="camera-placeholder">
-
-📷 CAMERA VIEW WILL APPEAR HERE
-
-</div>
-
-</div>
-
-</section>
-
-<!-- NEXT TIDES -->
-
-<section>
-
-<h2 class="section-title">🌊 Next Tides</h2>
-
-<div class="grid">
-
-<div class="card high-card">
-
-<h3>⬆ Next High Tide</h3>
-
-<div class="metric-value">7.0 ft</div>
-
-<p>1:36 PM</p>
-
-<p>In 27 Minutes</p>
-
-</div>
-
-<div class="card low-card">
-
-<h3>⬇ Next Low Tide</h3>
-
-<div class="metric-value">2.9 ft</div>
-
-<p>6:52 PM</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FISHING CONDITIONS -->
-
-<section>
-
-<h2 class="section-title">🎣 Fishing Conditions</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Fishing Score</h3>
-
-<div class="metric-value">★★★★☆</div>
+    </section>
 
 </div>
 
-<div class="card">
+</body>
+</html>
+```
 
-<h3>Moon Phase</h3>
-
-<div class="metric-value">Waxing</div>
-
-<p>Crescent</p>
-
-</div>
-
-<div class="card">
-
-<h3>Tide Trend</h3>
-
-<div class="metric-value">Incoming</div>
-
-</div>
-
-<div class="card">
-
-<h3>Best Time</h3>
-
-<div class="metric-value">5-8 AM</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- TRIP PLANNER -->
-
-<section>
-
-<h2 class="section-title">🚗 Trip Planner</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Traffic</h3>
-
-<p>Road conditions and cameras coming soon.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Parking</h3>
-
-<p>Launch sites and parking information.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Crabbing</h3>
-
-<p>Conditions, tides and recommendations.</p>
-
-</div>
-
-</div>
 
 </section>
 
