@@ -36,112 +36,133 @@
             <label for="theme">Theme</label>
 
             <select id="theme">
-                <option>Coastal Blue</option>
-                <option>Dark Mode</option>
-                <option>Sand</option>
+                <option>🌊 Coastal Blue</option>
+                <option>🌙 Dark Mode</option>
+                <option>🏖️ Sand</option>
             </select>
 
         </div>
 
     </header>
 
-    <!-- LOCATION BAR -->
+    <!-- LOCATION CONTROLS -->
 
-    <section class="card">
+    <section class="card location-card">
 
-        <div class="location-bar">
+        <div class="location-controls">
 
-            <select>
+            <select id="location">
 
                 <option>Astoria</option>
-                <option>Garibaldi</option>
+                <option>Seaside</option>
+                <option>Cannon Beach</option>
                 <option>Rockaway Beach</option>
+                <option>Garibaldi</option>
+                <option>Tillamook</option>
                 <option>Pacific City</option>
+                <option>Lincoln City</option>
+                <option>Depoe Bay</option>
                 <option>Newport</option>
+                <option>Yachats</option>
                 <option>Florence</option>
+                <option>Reedsport</option>
                 <option>Winchester Bay</option>
 
             </select>
 
-            <button>Use My Location</button>
+            <button>📍 Use My Location</button>
 
-            <button>Refresh</button>
+            <button>🔄 Refresh</button>
 
         </div>
 
     </section>
 
-    <!-- QUICK LOCATIONS -->
+    <!-- CURRENT TIDE -->
 
-    <section class="quick-links">
+    <section class="tide-banner">
 
-        <button>Astoria</button>
-        <button>Garibaldi</button>
-        <button>Rockaway</button>
-        <button>Pacific City</button>
-        <button>Newport</button>
-        <button>Florence</button>
-        <button>Winchester Bay</button>
+        <h2>🌊 Current Tide</h2>
+
+        <div class="tide-height">
+            6.8 ft
+        </div>
+
+        <div class="tide-status">
+            Rising
+        </div>
+
+        <div class="tide-next">
+            Next High Tide: 1:36 PM
+        </div>
 
     </section>
 
     <!-- CURRENT CONDITIONS -->
 
-    <h2>Current Conditions</h2>
+    <h2 class="section-title">
+        Current Conditions
+    </h2>
 
-    <section class="dashboard-grid">
+    <section class="conditions-grid">
 
         <div class="card">
-            <h3>Tide</h3>
-            <p>6.8 ft</p>
-            <small>Rising</small>
+            <h3>🌤 Weather</h3>
+            <div class="metric">55°F</div>
+            <p>Cloudy</p>
         </div>
 
         <div class="card">
-            <h3>Weather</h3>
-            <p>55°F</p>
-            <small>Cloudy</small>
+            <h3>💨 Wind</h3>
+            <div class="metric">14 mph</div>
+            <p>NW</p>
         </div>
 
         <div class="card">
-            <h3>Wind</h3>
-            <p>14 mph</p>
-            <small>NW</small>
+            <h3>🏄 Surf</h3>
+            <div class="metric">6.8 ft</div>
+            <p>Moderate</p>
         </div>
 
         <div class="card">
-            <h3>Surf</h3>
-            <p>6.8 ft</p>
-            <small>Moderate</small>
+            <h3>🌡 Water Temp</h3>
+            <div class="metric">52°F</div>
+            <p>Ocean</p>
         </div>
 
         <div class="card">
-            <h3>Water Temp</h3>
-            <p>52°F</p>
-            <small>Ocean</small>
+            <h3>🎣 Fishing Score</h3>
+            <div class="metric">Good</div>
+            <p>★★★★☆</p>
         </div>
 
     </section>
 
     <!-- CAMERAS -->
 
-    <h2>Live Cameras</h2>
+    <h2 class="section-title">
+        📷 Live Cameras
+    </h2>
 
     <section class="card">
 
         <div class="camera-controls">
 
             <select>
-                <option>Garibaldi</option>
+
                 <option>Astoria</option>
+                <option>Garibaldi</option>
                 <option>Newport</option>
                 <option>Winchester Bay</option>
+
             </select>
 
             <select>
+
                 <option>Harbor Cam</option>
                 <option>Beach Cam</option>
                 <option>Traffic Cam</option>
+
             </select>
 
         </div>
@@ -156,71 +177,65 @@
 
     <!-- NEXT TIDES -->
 
-    <h2>Next Tides</h2>
+    <h2 class="section-title">
+        Next Tides
+    </h2>
 
-    <section class="dashboard-grid">
+    <section class="two-column">
 
         <div class="card">
-            <h3>Next High Tide</h3>
-            <p>7.0 ft</p>
-            <small>1:36 PM</small>
+
+            <h3>⬆ Next High Tide</h3>
+
+            <div class="metric">
+                7.0 ft
+            </div>
+
+            <p>1:36 PM</p>
+
         </div>
 
         <div class="card">
-            <h3>Next Low Tide</h3>
-            <p>2.9 ft</p>
-            <small>6:52 PM</small>
+
+            <h3>⬇ Next Low Tide</h3>
+
+            <div class="metric">
+                2.9 ft
+            </div>
+
+            <p>6:52 PM</p>
+
         </div>
 
     </section>
 
     <!-- FISHING CONDITIONS -->
 
-    <h2>Fishing Conditions</h2>
+    <h2 class="section-title">
+        Fishing Conditions
+    </h2>
 
-    <section class="dashboard-grid">
-
-        <div class="card">
-            <h3>Fishing Score</h3>
-            <p>★★★★☆</p>
-        </div>
+    <section class="conditions-grid">
 
         <div class="card">
             <h3>Moon Phase</h3>
-            <p>Waxing Crescent</p>
+            <div class="metric">Waxing</div>
+            <p>Crescent</p>
         </div>
 
         <div class="card">
             <h3>Tide Trend</h3>
-            <p>Incoming</p>
+            <div class="metric">Incoming</div>
         </div>
 
         <div class="card">
             <h3>Best Time</h3>
-            <p>5 AM - 8 AM</p>
-        </div>
-
-    </section>
-
-    <!-- TRIP PLANNER -->
-
-    <h2>Trip Planner</h2>
-
-    <section class="dashboard-grid">
-
-        <div class="card">
-            <h3>Traffic</h3>
-            <p>Coming Soon</p>
-        </div>
-
-        <div class="card">
-            <h3>Parking</h3>
-            <p>Coming Soon</p>
+            <div class="metric">5–8 AM</div>
         </div>
 
         <div class="card">
             <h3>Crabbing</h3>
-            <p>Coming Soon</p>
+            <div class="metric">Good</div>
         </div>
 
     </section>
@@ -230,12 +245,3 @@
 </body>
 </html>
 ```
-
-
-</section>
-
-</div>
-
-</body>
-
-</html>
