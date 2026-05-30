@@ -253,3 +253,64 @@ button:hover {
     }
 
 }
+/* CURRENT CONDITIONS BAR */
+
+.conditions-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.conditions-title {
+    font-size: 3rem;
+    color: #3fa0d8;
+    margin-bottom: 35px;
+}
+
+.conditions-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.condition-item {
+    white-space: nowrap;
+}
+
+.fishing-score {
+    font-size: 2.2rem;
+}
+
+.fishing-score span {
+    color: #005b96;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .conditions-row {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.3rem;
+    }
+
+    .conditions-title {
+        font-size: 2rem;
+    }
+
+    .fishing-score {
+        font-size: 1.5rem;
+    }
+
+    .fishing-score span {
+        font-size: 2rem;
+    }
+
+}
